@@ -1,0 +1,64 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+.hero_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.heroIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+.heroIcons::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+.me {
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  background: linear-gradient(var(--color-primary), transparent);
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+.scrollDown {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-style: 0.9rem;
+}
+@media screen and (max-widht: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+@media screen and (max-widht: 600px) {
+  header {
+    height: 100vh;
+  }
+  .heroIcons,
+  .scrollDown {
+    display: none;
+  }
+}

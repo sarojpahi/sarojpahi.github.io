@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0cc3e1a4.css",
-    "main.js": "/static/js/main.d3e0f408.js",
-    "static/media/cv.pdf": "/static/media/cv.a983e254200b64477508.pdf",
-    "static/media/me.png": "/static/media/me.c5a4790c3940345880e3.png",
-    "static/media/TechyBackgrounds.png": "/static/media/TechyBackgrounds.d7ae6b1e3be29d0ef5d8.png",
+    "main.css": "/static/css/main.d656293d.css",
+    "main.js": "/static/js/main.a3db1ec2.js",
+    "static/media/4k-technology-wallpaper.jpg": "/static/media/4k-technology-wallpaper.7d34f7f17975414ece7b.jpg",
+    "static/media/4k-technology-wallpaper-rotate.jpg": "/static/media/4k-technology-wallpaper-rotate.087b9c324fb66e8a12ef.jpg",
     "index.html": "/index.html",
-    "main.0cc3e1a4.css.map": "/static/css/main.0cc3e1a4.css.map",
-    "main.d3e0f408.js.map": "/static/js/main.d3e0f408.js.map"
+    "main.d656293d.css.map": "/static/css/main.d656293d.css.map",
+    "main.a3db1ec2.js.map": "/static/js/main.a3db1ec2.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cc3e1a4.css",
-    "static/js/main.d3e0f408.js"
+    "static/css/main.d656293d.css",
+    "static/js/main.a3db1ec2.js"
   ]
 }

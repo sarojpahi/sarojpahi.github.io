@@ -22,8 +22,10 @@ html {
   display: none;
 }
 body {
-  background-image: url(./Assets/TechyBackgrounds.png);
-  background-position: center;
+  /* background-image: url(./Assets/wallpapertip_technology-wallpapers-1920x1080_2372593.jpg) !important; */
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   color: white;
   line-height: 1.7;
 }

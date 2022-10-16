@@ -1,24 +1,24 @@
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import { CTA } from "./CTA";
 import "./Hero.css";
-import me from "../../Assets/me.png";
-import { HeroIcons } from "./HeroIcons";
+import bg from "../../Assets/4k-technology-wallpaper.jpg";
+import bgr from "../../Assets/4k-technology-wallpaper-rotate.jpg";
 export const Hero = () => {
   return (
-    <header>
-      <div className="container hero_container">
-        <h5>Hello I'm</h5>
-        <h1>Saroj Kumar Pahi</h1>
-        <h5 className="text-light">Full Stack Web Developer</h5>
-        <CTA />
-        <HeroIcons />
-        <div className="me">
-          <img src={me} alt="" />
-        </div>
-        <a href="#contact" className="scrollDown">
-          Scroll Down
-        </a>
-      </div>
-    </header>
+    <Box
+      bgImage={[bgr, bgr, bg]}
+      bgSize="100% 100%"
+      bgRepeat={"no-repeat"}
+      bgBlendMode
+      h="100vh"
+    >
+      <Box className="name">
+        <Text textAlign="left">Hi I'm</Text>
+        <Heading>Saroj Kumar Pahi</Heading>
+        <Text className="title" color={"white"}>
+          Full Stack Web Developer
+        </Text>
+      </Box>
+    </Box>
   );
 };

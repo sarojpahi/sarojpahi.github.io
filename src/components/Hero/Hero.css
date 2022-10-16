@@ -1,65 +1,15 @@
-header {
-  height: 100vh;
-  padding-top: 3rem;
-  overflow: hidden;
+.name {
+  color: lightyellow;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%);
 }
-.hero_container {
-  text-align: center;
-  height: 95%;
+.title {
+  font-size: 1.3rem;
+  color: lightyellow;
   position: relative;
-}
-.cta {
-  margin-top: 2.5rem;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-}
-.heroIcons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-}
-.heroIcons::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
-.me {
-  width: 18rem;
-  height: 25rem;
-  position: absolute;
-  left: calc(50% - 10.5rem);
-  bottom: 1rem;
-  margin-top: 4rem;
-  background: linear-gradient(var(--color-primary), transparent);
-  border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  padding: 3rem 1.5rem 1.5rem 1.5rem;
-}
-.scrollDown {
-  position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
-  transform: rotate(90deg);
-  font-weight: 300;
-  font-style: 0.9rem;
-}
-@media screen and (max-widht: 1024px) {
-  header {
-    height: 68vh;
-  }
-}
-@media screen and (max-widht: 600px) {
-  header {
-    height: 100vh;
-  }
-  .heroIcons,
-  .scrollDown {
-    display: none;
-  }
+  top: 0.2rem;
+  right: -15%;
+  transform: translate(50%);
 }

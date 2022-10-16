@@ -4,45 +4,51 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { RiServiceLine } from "react-icons/ri";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from "react";
+import { Link } from "@chakra-ui/react";
 export const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a
+      <Link
+        id="link"
         href="#"
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
       >
         <AiOutlineHome />
-      </a>
-      <a
+      </Link>
+      <Link
+        id="link"
         href="#about"
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
         <AiOutlineUser />
-      </a>
-      <a
+      </Link>
+      <Link
+        id="link"
         href="#exp"
         onClick={() => setActiveNav("#exp")}
         className={activeNav === "#exp" ? "active" : ""}
       >
         <BiBook />
-      </a>
-      <a
+      </Link>
+      <Link
+        id="link"
         href="#ser"
         onClick={() => setActiveNav("#ser")}
         className={activeNav === "#ser" ? "active" : ""}
       >
         <RiServiceLine />
-      </a>
-      <a
+      </Link>
+      <Link
+        id="link"
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
         <BiMessageSquareDetail />
-      </a>
+      </Link>
     </nav>
   );
 };

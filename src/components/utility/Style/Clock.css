@@ -1,0 +1,117 @@
+.timecont {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background-color: #2f3632; */
+}
+#time {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#time .circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#time .circle svg {
+  position: relative;
+  transform: rotate(270deg);
+}
+#time .circle svg:nth-child(1) {
+  width: 250px;
+  height: 250px;
+}
+#time .circle svg:nth-child(2) {
+  width: 210px;
+  height: 210px;
+}
+#time .circle svg:nth-child(3) {
+  width: 170px;
+  height: 170px;
+}
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 5;
+  transform: translate(5px, 5px);
+  opacity: 0.25;
+}
+#time .circle:nth-child(1) svg {
+  width: 250px;
+  height: 250px;
+}
+#time .circle:nth-child(2) svg {
+  width: 210px;
+  height: 210px;
+}
+#time .circle:nth-child(3) svg {
+  width: 170px;
+  height: 170px;
+}
+#time .circle:nth-child(1) svg circle {
+  stroke-dasharray: 760;
+}
+#time .circle:nth-child(2) svg circle {
+  stroke-dasharray: 630;
+}
+#time .circle:nth-child(3) svg circle {
+  stroke-dasharray: 510;
+}
+.dot1,
+.dot2,
+.dot3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+}
+.dot1::before,
+.dot2::before,
+.dot3::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.dot1::before {
+  background: #ff2972;
+}
+.dot2::before {
+  background: #fee800;
+}
+.dot3::before {
+  background: #04fc43;
+}
+.timeBx {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.h::after,
+.m::after {
+  content: ":";
+  position: absolute;
+}
+.t2 {
+  position: absolute;
+  transform: translateY(-15px);
+  font-size: 0.5rem;
+  right: 56px;
+}

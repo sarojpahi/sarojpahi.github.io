@@ -1,8 +1,9 @@
 import { Box } from "@chakra-ui/react";
-import bg from "../../Assets/w3.jpg";
-export const Contact = () => {
+import React from "react";
+import bg from "../../Assets/w1.jpg";
+export const Project = () => {
   return (
-    <section id="contact">
+    <section id="project">
       <Box
         bgImage={[bg]}
         bgSize={["auto 100%", "100% 100%"]}

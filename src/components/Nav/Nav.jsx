@@ -35,9 +35,9 @@ export const Nav = () => {
       </Link>
       <Link
         id="link"
-        href="#ser"
-        onClick={() => setActiveNav("#ser")}
-        className={activeNav === "#ser" ? "active" : ""}
+        href="#project"
+        onClick={() => setActiveNav("#project")}
+        className={activeNav === "#project" ? "active" : ""}
       >
         <RiServiceLine />
       </Link>

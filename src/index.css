@@ -22,7 +22,8 @@ html {
   display: none;
 }
 body {
-  /* background-image: url(./Assets/wallpapertip_technology-wallpapers-1920x1080_2372593.jpg) !important; */
+  /* background-image: url(./Assets/w1.jpg) !important; */
+  background: #111b1e !important;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -37,7 +38,6 @@ h1 {
   font-size: 2.5rem;
 }
 section {
-  margin-top: 8rem;
   height: 100vh;
 }
 section > h2,
@@ -59,25 +59,6 @@ a {
 a:hover {
   color: white;
 }
-.btn {
-  width: max-content;
-  display: inline-block;
-  color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
-  transition: var(--transiton);
-}
-.btn:hover {
-  background: white;
-  color: var(--color-bg);
-  border-color: transparent;
-}
-.btn-primary {
-  background: var(--color-primary);
-  color: var(--color-bg);
-}
 img {
   display: block;
   width: 100%;
@@ -87,15 +68,9 @@ img {
   .container {
     width: var(--container-width-md);
   }
-  section {
-    margin-top: 6rem;
-  }
 }
 @media screen and (max-widht: 600px) {
   .container {
     width: var(--coontainer-width-ms);
-  }
-  section > h2 {
-    margin-bottom: 2rem;
   }
 }

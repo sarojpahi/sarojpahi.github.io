@@ -5,6 +5,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Skills } from "./components/Exp/Exp";
 import { Hero } from "./components/Hero/Hero";
 import { Nav } from "./components/Nav/Nav";
+import { Project } from "./components/Project/Project";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Project />
       <Contact />
     </ChakraProvider>
   );

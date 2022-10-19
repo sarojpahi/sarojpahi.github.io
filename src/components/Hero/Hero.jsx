@@ -31,16 +31,16 @@ export const Hero = () => {
         </Box>
         <Flex
           position={"relative"}
-          top="10px"
+          top="12px"
           align={"center"}
           justify="center"
-          w="250px"
-          h="250px"
+          minW="250px"
+          minH="250px"
         >
           <Clock />
         </Flex>
       </VStack>
-      <Box width={"50%"}>
+      <Box width={"50%"} mt="-25px" display={["none", "block"]}>
         <Heroicons />
       </Box>
       <GmContact

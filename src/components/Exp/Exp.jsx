@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, VStack } from "@chakra-ui/react";
+import { Heading, VStack } from "@chakra-ui/react";
 export const Skills = () => {
   return (
     <section id="exp">

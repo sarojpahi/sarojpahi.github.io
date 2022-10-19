@@ -18,11 +18,7 @@ export const Btn = ({ name, color, onClick }) => {
           <i></i>
         </a>
       </Box>
-      <Box
-        w="full"
-        className={cls1}
-        style={{ "--clr": color ? color : "blue" }}
-      >
+      <Box className={cls1} style={{ "--clr": color ? color : "blue" }}>
         <button href="" onClick={onClick}>
           <span>Contact</span>
         </button>

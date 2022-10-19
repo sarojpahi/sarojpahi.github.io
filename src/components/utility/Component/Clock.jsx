@@ -4,6 +4,7 @@ export const Clock = () => {
   const [s, setS] = useState(0);
   const [m, setM] = useState(0);
   const [h, setH] = useState(0);
+  let t = h;
   const getTime = () => {
     setInterval(() => {
       let h = new Date().getHours();
@@ -71,7 +72,7 @@ export const Clock = () => {
               style={{ color: "#04fc43", textShadow: "0 0 10px #04fc43" }}
               className="h"
             >
-              {h < 10 ? "0" + h : h > 12 ? "0" + (h - 12) : h}
+              {(t = t > 12 ? t - 12 : t) < 10 ? "0" + t : t}
             </div>
             <div
               style={{ color: "#fee800", textShadow: "0 0 10px #fee800" }}

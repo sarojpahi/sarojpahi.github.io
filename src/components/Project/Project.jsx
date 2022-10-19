@@ -1,6 +1,5 @@
 import { Box, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
-import bg from "../../Assets/w1.jpg";
 export const Project = () => {
   return (
     <section id="project">

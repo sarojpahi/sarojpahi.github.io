@@ -1,0 +1,60 @@
+.myname {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(32, 32, 45);
+  box-sizing: border-box;
+}
+.myname h2 {
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 150px;
+  color: #252839;
+  -webkit-text-stroke: 2px #383d52;
+}
+.myname h2::before {
+  content: attr(dataText);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: green;
+  -webkit-text-stroke: 0 #383d52;
+  border-right: 3px solid green;
+  overflow: hidden;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+/* #logo path:nth-child(1) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 50px;
+} */
+/* #logo path:nth-child(){
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 50px;
+}
+#logo path:nth-child(){
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 50px;
+}
+#logo path:nth-child(){
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 50px;
+}
+#logo path:nth-child(){
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 50px;
+} */

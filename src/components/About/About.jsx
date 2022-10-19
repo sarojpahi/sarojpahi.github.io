@@ -5,9 +5,9 @@ import me from "../../Assets/me.png";
 export const About = () => {
   return (
     <section id="about">
-      <Box h="100vh">
+      <Box>
         <VStack align={"center"} justify={"center"} my="20px">
-          <Heading color={"red"}>About Me</Heading>
+          <Heading color={"#00ccff"}>About Me</Heading>
         </VStack>
         <Flex
           w="100%"
@@ -38,15 +38,18 @@ export const About = () => {
             <Text w="95%" fontSize={["", "20px"]}>
               I’m an enthusiastic Full Stack Web Developer with a passion for
               developing scalable web applications and working across the full
-              stack. Adeptive to all kinds of people and climate with patience,
-              time management, problem-solving and self motivating as core of
-              me. Always ready to learn and improve from my mistakes.
-              Communication as the backbone I’m quite proficient in
-              collaboration, decision making, and team management as well as
-              being accountable for my decisions. Seeking to work in an
+              stack. Adaptive to all kinds of people, and surrounding and always
+              appreciate constructive criticism to improve my performance. A
+              highly self-motivated person with strong communication skills and
+              effective team management skills. A great learner with a
+              problem-solving mindset.
+            </Text>
+            <Text w="95%" fontSize={["", "20px"]}>
+              I’m quite proficient in collaboration, and decision-making and
+              always accountable for my decisions. Seeking to work in an
               environment that can encourage me to succeed both personally and
               professionally and where I can utilize my skills and Knowledge not
-              only for my growth but also the people around me.
+              only for my growth but also for the people around me.
             </Text>
           </VStack>
           <VStack width={["100%", "300px"]} mr="10px">

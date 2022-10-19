@@ -6,6 +6,7 @@
 }
 :root {
   --bg: #111b1e;
+  --bg2: linear-gradient(to top, black, #111b1e);
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
@@ -74,4 +75,7 @@ img {
   .container {
     width: var(--coontainer-width-ms);
   }
+}
+#project {
+  background: var(--bg2);
 }

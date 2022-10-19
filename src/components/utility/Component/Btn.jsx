@@ -1,18 +1,28 @@
 import "../Style/Btn.css";
 import cv from "../../../Assets/cvlatest.pdf";
-import { Box, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 export const Btn = ({ name, color }) => {
   const cls = useBreakpointValue({
     base: "btn1",
     md: "btn",
   });
-
+  const cls1 = useBreakpointValue({
+    base: "btn1",
+    md: "btn2",
+  });
   return (
-    <Box className={cls} style={{ "--clr": color ? color : "blue" }}>
-      <a href={cv} download>
-        <span>{name ? name : "Button"}</span>
-        <i></i>
-      </a>
-    </Box>
+    <Flex align={"center"} justify="space-between" gap={20}>
+      <Box className={cls} style={{ "--clr": color ? color : "blue" }}>
+        <a href={cv} download>
+          <span>{name ? name : "Button"}</span>
+          <i></i>
+        </a>
+      </Box>
+      <Box className={cls1} style={{ "--clr": color ? color : "blue" }}>
+        <a href="#contact">
+          <span>Contact</span>
+        </a>
+      </Box>
+    </Flex>
   );
 };

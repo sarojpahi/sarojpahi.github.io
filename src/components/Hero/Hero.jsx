@@ -6,13 +6,7 @@ import { Btn } from "../utility/Component/Btn";
 import { Heroicons } from "../utility/Component/Heroicons";
 export const Hero = () => {
   return (
-    <Box
-      bgSize="100% 100%"
-      bgRepeat={"no-repeat"}
-      h="100vh"
-      w={"full"}
-      border="1px solid red"
-    >
+    <Box bgSize="100% 100%" bgRepeat={"no-repeat"} h="100vh" w={"full"}>
       <Flex
         position="absolute"
         top="2rem"
@@ -32,6 +26,7 @@ export const Hero = () => {
           <Btn name="Download CV" color={"#1e9bff"} />
         </Box>
       </Box>
+
       <Box position={"relative"} top="50%">
         <Heroicons />
       </Box>

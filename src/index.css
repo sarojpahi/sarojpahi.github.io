@@ -5,6 +5,7 @@
   list-style: none;
 }
 :root {
+  --bg: #111b1e;
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
@@ -23,7 +24,7 @@ html {
 }
 body {
   /* background-image: url(./Assets/w1.jpg) !important; */
-  background: #111b1e !important;
+  background: var(--bg) !important;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -38,7 +39,7 @@ h1 {
   font-size: 2.5rem;
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 section > h2,
 section > h5 {

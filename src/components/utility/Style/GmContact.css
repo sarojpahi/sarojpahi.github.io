@@ -3,7 +3,7 @@
   z-index: 1000;
   width: 100%;
   max-width: 1000px;
-  padding: 50px;
+  padding: 3% 4%;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 45px rgba(255, 255, 255, 0.25);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -11,6 +11,7 @@
   border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(5px);
+  margin-bottom: 40px;
 }
 .gmcontainer::before {
   content: "";
@@ -23,13 +24,7 @@
   pointer-events: none;
   transform: skewX(-15deg);
 }
-.gmcontainer h2 {
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
+
 .gmcontainer .row100 {
   position: relative;
   width: 100%;
@@ -119,4 +114,10 @@
 .gmcontainer .row100 .col input[type="submit"]:hover {
   background-color: #1e9bff;
   color: #fff;
+}
+@media screen and (max-widht: 600px) {
+  .gmcontainer {
+    padding: 5px 20px;
+    width: 100%;
+  }
 }

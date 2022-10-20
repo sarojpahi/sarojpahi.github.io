@@ -1,0 +1,66 @@
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: 1s;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+}
+.card:hover {
+  transform: translateX(50%);
+  z-index: 1000;
+}
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  background: #fff;
+  z-index: 1;
+  transition: 1s;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+}
+.card:hover .imgBox {
+  transform: rotateY(-180deg);
+}
+.card .imgBox div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.card .imgBox div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .imgBox div object {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .imgBox div:nth-child(2) {
+  transform: rotateY(180deg);
+}
+.card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}

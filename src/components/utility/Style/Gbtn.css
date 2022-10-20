@@ -117,4 +117,7 @@
   .gbtn::after {
     opacity: 1;
   }
+  .gbtn span {
+    color: rgba(255, 255, 255, 1);
+  }
 }

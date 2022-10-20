@@ -9,7 +9,6 @@ import {
 import React from "react";
 import "./Hero.css";
 import { Clock } from "../utility/Component/Clock";
-import { Btn } from "../utility/Component/Btn";
 import { Heroicons } from "../utility/Component/Heroicons";
 import { GmContact } from "../utility/Component/GmContact";
 import { Gbtn } from "../utility/Component/Gbtn";
@@ -40,11 +39,13 @@ export const Hero = () => {
       <Box width={"50%"} mt="-25px" display={["none", "block"]}>
         <Heroicons />
       </Box>
-      <GmContact
-        display={isOpen ? "Flex" : "none"}
-        onClose={onClose}
-        isOpen={isOpen}
-      />
+      <Box className="contactpos">
+        <GmContact
+          display={isOpen ? "Flex" : "none"}
+          onClose={onClose}
+          isOpen={isOpen}
+        />
+      </Box>
     </Box>
   );
 };

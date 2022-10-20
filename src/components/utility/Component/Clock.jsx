@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Style/Clock.css";
+import { Loader } from "./Loader";
 export const Clock = () => {
   const [s, setS] = useState(0);
   const [m, setM] = useState(0);
@@ -25,7 +26,7 @@ export const Clock = () => {
           <div
             className="circle"
             style={{
-              stroke: "#ff2972",
+              stroke: "#FD0D0D",
               strokeDashoffset: `${760 - (760 * +s) / 60}`,
             }}
           >
@@ -40,7 +41,7 @@ export const Clock = () => {
           <div
             className="circle"
             style={{
-              stroke: "#fee800",
+              stroke: "#32F905",
               strokeDashoffset: `${630 - (630 * +m) / 60}`,
             }}
           >
@@ -55,7 +56,7 @@ export const Clock = () => {
           <div
             className="circle"
             style={{
-              stroke: "#04fc43",
+              stroke: "#2C0EF0",
               strokeDashoffset: `${510 - (510 * (h > 12 ? h - 12 : h)) / 12}`,
             }}
           >
@@ -69,18 +70,18 @@ export const Clock = () => {
           </div>
           <div className="timeBx">
             <div
-              style={{ color: "#04fc43", textShadow: "0 0 10px #04fc43" }}
+              style={{ color: "#FD0D0D", textShadow: "0 0 10px #FD0D0D" }}
               className="h"
             >
               {(t = t > 12 ? t - 12 : t) < 10 ? "0" + t : t}
             </div>
             <div
-              style={{ color: "#fee800", textShadow: "0 0 10px #fee800" }}
+              style={{ color: "#32F905", textShadow: "0 0 10px #32F905" }}
               className="h"
             >
               {m < 10 ? "0" + m : m}
             </div>
-            <div style={{ color: "#ff2972", textShadow: "0 0 10px #ff2972" }}>
+            <div style={{ color: "#2C0EF0", textShadow: "0 0 10px #2C0EF0" }}>
               {s < 10 ? "0" + s : s}
             </div>
             <div style={{ color: "white" }} className="t2">
@@ -89,7 +90,7 @@ export const Clock = () => {
           </div>
         </div>
       ) : (
-        <h2 style={{ color: "red" }}>Loading...</h2>
+        <Loader />
       )}
     </div>
   );

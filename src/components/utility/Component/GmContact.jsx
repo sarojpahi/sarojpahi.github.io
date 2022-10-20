@@ -1,4 +1,4 @@
-import { Box, Flex, Input, Textarea } from "@chakra-ui/react";
+import { Box, Flex, Heading, Input, Textarea } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import "../Style/GmContact.css";
@@ -10,7 +10,7 @@ export const GmContact = ({ display, onClose, isOpen }) => {
       align="center"
       minH={"100vh"}
       w="100%"
-      p={"20px"}
+      p={["0", "20px"]}
       className="gmcbox"
       position={"absolute"}
       top="0"
@@ -19,7 +19,7 @@ export const GmContact = ({ display, onClose, isOpen }) => {
       <div className="gmcontainer">
         <Box
           pos={"absolute"}
-          top="10px"
+          top={"10px"}
           right={"10px"}
           color="white"
           cursor={"pointer"}
@@ -33,7 +33,14 @@ export const GmContact = ({ display, onClose, isOpen }) => {
         >
           <AiOutlineClose />
         </Box>
-        <h2>Contact Me</h2>
+        <Heading
+          fontWeight={"400"}
+          fontSize="36px"
+          color={"#fff"}
+          textAlign="center"
+        >
+          Contact Me
+        </Heading>
         <div className="row100">
           <div className="col">
             <div className="inputBox">

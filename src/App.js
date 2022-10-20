@@ -6,6 +6,7 @@ import { Skills } from "./components/Exp/Exp";
 import { Hero } from "./components/Hero/Hero";
 import { Nav } from "./components/Nav/Nav";
 import { Project } from "./components/Project/Project";
+import { ProjectCard } from "./components/Project/ProjectCard";
 
 function App() {
   return (

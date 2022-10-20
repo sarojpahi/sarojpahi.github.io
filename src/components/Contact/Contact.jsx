@@ -13,6 +13,7 @@ export const Contact = () => {
         h="100vh"
       >
         <GmContact />
+        <Box h={"40px"} pointerEvents="none"></Box>
       </Box>
     </section>
   );

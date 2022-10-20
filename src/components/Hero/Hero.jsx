@@ -39,7 +39,7 @@ export const Hero = () => {
       <Box width={"50%"} mt="-25px" display={["none", "block"]}>
         <Heroicons />
       </Box>
-      <Box className="contactpos">
+      <Box className="contactpos" zIndex={"1002"}>
         <GmContact
           display={isOpen ? "Flex" : "none"}
           onClose={onClose}

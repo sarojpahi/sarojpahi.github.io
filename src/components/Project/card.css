@@ -6,7 +6,7 @@
   background: linear-gradient(to left, #000, var(--bg));
 }
 .projectImageBox {
-  transform: translateX(-3rem);
+  transform: translateX(-3.5rem);
 }
 .boxImage {
   width: 320px;
@@ -18,6 +18,7 @@
   padding: 10px;
 }
 .boxImage img {
+  object-fit: contain;
   position: absolute;
   width: 300px;
   height: 200px;
@@ -49,11 +50,25 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+.projectCard2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 65rem;
+  background: linear-gradient(to right, #000, var(--bg));
+  flex-direction: row-reverse;
+}
+.projectImageBox2 {
+  transform: translateX(3.5rem);
+}
 @media screen and (max-width: 768px) {
-  .projectCard {
+  .projectCard,
+  .projectCard2 {
     flex-direction: column;
   }
-  .projectImageBox {
+  .projectImageBox,
+  .projectImageBox2 {
     transform: translate(-0rem, -4rem);
   }
   .projectDetails {

@@ -3,7 +3,7 @@ import React from "react";
 import "../Style/Gbtn.css";
 export const Pbtn = ({ link1, link2 }) => {
   return (
-    <Flex justify={"center"} align="center" gap={[1, 2, 3, 4, 6, 8]}>
+    <Flex justify={"center"} align="center" gap={[3, 3, 3, 4, 6, 8]}>
       <Box w="120px">
         <a href={link1} target="_blank" rel="noreferrer">
           <Box className="gbtn">

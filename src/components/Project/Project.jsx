@@ -11,13 +11,17 @@ export const Project = () => {
           <Heading color={"#00ccff"}>About My Projects</Heading>
         </VStack>
         <Flex
-          justify="flex-end"
+          className="pcs"
           align={"center"}
-          flexWrap={"wrap"}
-          width="100%"
+          w="100%"
           gap="10px"
+          flexWrap={"wrap"}
         >
-          {data ? data.map((el) => <Card key={key()} data={el} />) : ""}
+          {data
+            ? data.map((el, i) => (
+                <Card key={key()} data={el} flexDir={i % 2 === 0} />
+              ))
+            : ""}
         </Flex>
       </Box>
     </section>

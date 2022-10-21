@@ -52,7 +52,7 @@ export const About = () => {
               only for my growth but also for the people around me.
             </Text>
           </VStack>
-          <VStack width={["100%", "300px"]} mr="10px">
+          <VStack width={["100%", "300px"]} mr="10px" mb="20px">
             <Box>
               <Flex justify={"center"} align="center" className="box">
                 <span>

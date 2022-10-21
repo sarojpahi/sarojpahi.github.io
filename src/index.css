@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
 * {
   margin: 0%;
   padding: 0%;
   text-decoration: none;
   list-style: none;
+  font-family: "Lora", "Times New Roman", Times, serif;
 }
 :root {
   --bg: #111b1e;
@@ -40,7 +42,7 @@ h1 {
   font-size: 2.5rem;
 }
 section {
-  min-height: 100vh;
+  height: fit-content;
 }
 section > h2,
 section > h5 {

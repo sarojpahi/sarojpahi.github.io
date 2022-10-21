@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import "./projectcard.css";
+// import "./projectcard.css";
 export const ProjectCard = ({ img, img2, title, description }) => {
   return (
     <Box className="card">
@@ -8,9 +8,7 @@ export const ProjectCard = ({ img, img2, title, description }) => {
         <div>
           <img src={img} alt="" />
         </div>
-        <div>
-          <object data="https://slow-argument-2201.netlify.app/"></object>
-        </div>
+        <div></div>
       </Box>
       <Box className="details" h="100%"></Box>
     </Box>

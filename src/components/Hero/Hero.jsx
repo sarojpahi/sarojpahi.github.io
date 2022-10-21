@@ -15,7 +15,7 @@ import { Gbtn } from "../utility/Component/Gbtn";
 export const Hero = () => {
   const { isOpen, onToggle, onClose } = useDisclosure();
   return (
-    <Box bgRepeat={"no-repeat"} h="100vh" w={"100%"} mt="2rem">
+    <Box bgRepeat={"no-repeat"} h="fit-content" w={"100%"} my="2rem">
       <VStack className="name" gap={"15px"}>
         <VStack align={"flex-start"} px="5px">
           <Text textAlign="left">Hi I'm</Text>

@@ -1,8 +1,8 @@
 import { Box, Flex, Heading, VStack } from "@chakra-ui/react";
-import React from "react";
 import "./project.css";
-import me from "../../Assets/wallpapertip_full-hd-phone-wallpapers_152079.jpg";
-import { ProjectCard } from "./ProjectCard";
+import data from "./data.json";
+import { Card } from "./Card";
+import { v4 as key } from "uuid";
 export const Project = () => {
   return (
     <section id="project">
@@ -11,19 +11,13 @@ export const Project = () => {
           <Heading color={"#00ccff"}>About My Projects</Heading>
         </VStack>
         <Flex
+          justify="flex-end"
           align={"center"}
-          justify="center"
           flexWrap={"wrap"}
-          width="75%"
-          gap="0px 20px"
-          m="auto"
+          width="100%"
+          gap="10px"
         >
-          <ProjectCard img={me} img2={me} />
-          <ProjectCard img={me} />
-          <ProjectCard img={me} />
-          <ProjectCard img={me} />
-          <ProjectCard img={me} />
-          <ProjectCard img={me} />
+          {data ? data.map((el) => <Card key={key()} data={el} />) : ""}
         </Flex>
       </Box>
     </section>

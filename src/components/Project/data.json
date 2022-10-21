@@ -1,0 +1,34 @@
+[
+  {
+    "title": "JioMart Clone",
+    "logo": "https://user-images.githubusercontent.com/107534043/197141726-97204728-ed22-42eb-b87c-ad108a10e716.svg",
+    "description": "It is one of the India's top E-commerce Website. Implemented the following functions :",
+    "functions": [
+      "Signup through mobile number using live OTP(used firebase )",
+      "Logout",
+      "Add to cart",
+      "Sorting/Filtering",
+      "Billing"
+    ],
+    "image_1": "",
+    "image_2": "",
+    "link_1": "https://star-middle-3447.netlify.app/",
+    "linke_1": "https://github.com/sarojpahi/star-middle-3447",
+    "techStack": "ReactJS | Chakra UI | Firebase | CSS"
+  },
+  {
+    "title": "SurveyMonkey Clone",
+    "logo": "https://user-images.githubusercontent.com/107534043/197141888-734dac4a-e8ed-467c-b28a-eb6c84faa0f1.png",
+    "description": "It is a leading Survey platform around the globe. It lets it's users to create sophisticated surveys using expert templates.A collaboration project where I was responsible for the following task :",
+    "functions": [
+      "Creation of various pages of the website including the homepage and dashboard",
+      "Creating the navbar, footer, and some page components",
+      "Styling and making the pages responsive along with the login/signup page"
+    ],
+    "image_1": "",
+    "image_2": "",
+    "link_1": "https://slow-argument-2201.netlify.app/",
+    "linke_1": "https://github.com/ShrikantJawla/slow-argument-2201",
+    "techStack": "HTML | CSS | JavaScript"
+  }
+]

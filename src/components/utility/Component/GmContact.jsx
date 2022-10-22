@@ -1,10 +1,42 @@
-import { Box, Flex, Heading, Input, Textarea } from "@chakra-ui/react";
-import React from "react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Input,
+  Textarea,
+  useDisclosure,
+} from "@chakra-ui/react";
+import React, { useRef } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import "../Style/GmContact.css";
-export const GmContact = ({ display, onClose, isOpen }) => {
+import { Alert } from "./Alert";
+import emailjs from "@emailjs/browser";
+export const GmContact = ({ display, onC, isO }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_d78r4ac",
+        "template_qgyz1nf",
+        form.current,
+        "F8UhZka662eCUW5Xi"
+      )
+      .then(
+        () => {
+          onOpen();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <Flex
+      as={"form"}
+      ref={form}
       display={display}
       justify={"center"}
       align="center"
@@ -15,7 +47,9 @@ export const GmContact = ({ display, onClose, isOpen }) => {
       position={"absolute"}
       top="0"
       left={"0"}
+      onSubmit={sendEmail}
     >
+      <Alert isOpen={isOpen} onClose={onClose} />
       <div className="gmcontainer">
         <Box
           pos={"absolute"}
@@ -23,13 +57,13 @@ export const GmContact = ({ display, onClose, isOpen }) => {
           right={"10px"}
           color="white"
           cursor={"pointer"}
-          onClick={onClose}
+          onClick={onC}
           fontSize="24px"
           fontWeight={"bold"}
           _hover={{
             color: "#1e9bff",
           }}
-          display={isOpen ? "block" : "none"}
+          display={isO ? "block" : "none"}
         >
           <AiOutlineClose />
         </Box>
@@ -44,14 +78,14 @@ export const GmContact = ({ display, onClose, isOpen }) => {
         <div className="row100">
           <div className="col">
             <div className="inputBox">
-              <Input type="text" required="required" name="" />
+              <Input type="text" required="required" name="first_name" />
               <span className="text">First Name</span>
               <span className="line"></span>
             </div>
           </div>
           <div className="col">
             <div className="inputBox">
-              <Input type="text" required="required" name="" />
+              <Input type="text" required="required" name="last_name" />
               <span className="text">Last Name</span>
               <span className="line"></span>
             </div>
@@ -60,14 +94,14 @@ export const GmContact = ({ display, onClose, isOpen }) => {
         <div className="row100">
           <div className="col">
             <div className="inputBox">
-              <Input type="text" required="required" name="" />
+              <Input type="email" required="required" name="email" />
               <span className="text">Email</span>
               <span className="line"></span>
             </div>
           </div>
           <div className="col">
             <div className="inputBox">
-              <Input type="text" required="required" name="" />
+              <Input type="text" required="required" name="mobile" />
               <span className="text">Mobile</span>
               <span className="line"></span>
             </div>
@@ -81,6 +115,7 @@ export const GmContact = ({ display, onClose, isOpen }) => {
                 placeholder=""
                 resize={"none"}
                 w="full"
+                name="message"
               ></Textarea>
               <span className="text">Type Your Message Here...</span>
               <span className="line"></span>

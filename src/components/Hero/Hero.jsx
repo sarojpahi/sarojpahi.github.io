@@ -42,8 +42,8 @@ export const Hero = () => {
       <Box className="contactpos" zIndex={"1002"}>
         <GmContact
           display={isOpen ? "Flex" : "none"}
-          onClose={onClose}
-          isOpen={isOpen}
+          onC={onClose}
+          isO={isOpen}
         />
       </Box>
     </Box>

@@ -2,7 +2,7 @@
   {
     "title": "JioMart Clone",
     "logo": "https://user-images.githubusercontent.com/107534043/197141726-97204728-ed22-42eb-b87c-ad108a10e716.svg",
-    "description": "It is one of the India's top E-commerce Website.I deals with a wide variety of products including groceries,fashion,electronics,etc.. . Implemented the following functions :",
+    "description": "It is one of the India's top E-commerce Website.It deals with a wide variety of products including groceries,fashion,electronics,etc.. . Implemented the following functions :",
     "functions": [
       "Signup through mobile number using live OTP(used firebase )",
       "Logout",

@@ -41,9 +41,6 @@ body {
 h1 {
   font-size: 2.5rem;
 }
-section {
-  height: fit-content;
-}
 section > h2,
 section > h5 {
   text-align: center;

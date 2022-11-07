@@ -1,10 +1,11 @@
+import { Box } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import "../Style/Clock.css";
 import { Loader } from "./Loader";
 export const Clock = () => {
   const [s, setS] = useState(0);
   const [m, setM] = useState(0);
-  const [h, setH] = useState(0);
+  const [h, setH] = useState();
   let t = h;
   const getTime = () => {
     setInterval(() => {
@@ -20,8 +21,8 @@ export const Clock = () => {
     getTime();
   }, []);
   return (
-    <div className="timecont">
-      {h ? (
+    <Box className="timecont">
+      {h !== undefined ? (
         <div id="time">
           <div
             className="circle"
@@ -92,6 +93,6 @@ export const Clock = () => {
       ) : (
         <Loader />
       )}
-    </div>
+    </Box>
   );
 };

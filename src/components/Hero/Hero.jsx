@@ -17,7 +17,12 @@ export const Hero = () => {
   const { isOpen, onToggle, onClose } = useDisclosure();
   const [bg, setBg] = useState("");
   return (
-    <Box h={["max-content", "100vh"]} w={"100%"} bg={bg} transition="0.5s">
+    <Box
+      h={["max-content", "max-content", "max-content", "100vh"]}
+      w={"100%"}
+      bg={bg}
+      transition="0.5s"
+    >
       <VStack className="name" gap={"15px"} pt="2rem">
         <VStack align={"flex-start"} px="5px">
           <Text textAlign="left">Hi I'm</Text>

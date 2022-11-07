@@ -6,6 +6,7 @@ import { Skills } from "./components/Exp/Exp";
 import { Hero } from "./components/Hero/Hero";
 import { Nav } from "./components/Nav/Nav";
 import { Project } from "./components/Project/Project";
+import { GithubCalender } from "./components/Stats/GithubCalender";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <GithubCalender />
       <Project />
       <Contact />
     </ChakraProvider>

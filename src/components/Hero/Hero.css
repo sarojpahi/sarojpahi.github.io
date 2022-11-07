@@ -34,11 +34,10 @@
   font-weight: 700;
   transition: 0.5s;
   opacity: 0;
-  color: #000;
 }
 .sci li:hover:before {
-  opacity: 0.1;
-  transform: translate(-50%, calc(-50% + 85px));
+  opacity: 0.2;
+  transform: translate(-50%, calc(-50% + 95px));
 }
 .sci li a {
   position: relative;
@@ -51,7 +50,6 @@
   justify-content: center;
   color: #333;
   border-radius: 10px;
-
   font-size: 20px;
   transform-style: preserve-3d;
   perspective: 500px;
@@ -66,7 +64,9 @@
   transition: 0.25s;
   color: #fff;
 }
-.sci li a:hover i {
-  transition: 0.3s;
-  transform: scale(1.15);
+.sicon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

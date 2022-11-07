@@ -37,14 +37,7 @@ export const Hero = () => {
             <Gbtn onToggle={onToggle} />
           </Box>
         </VStack>
-        <Flex
-          position={"relative"}
-          top="25px"
-          align={"center"}
-          justify="center"
-          minW="250px"
-          minH="250px"
-        >
+        <Flex position={"relative"} top="25px" minW="250px" minH="250px">
           <Clock />
         </Flex>
         <Box width={"50%"} pt="25px" h="250px">
@@ -56,12 +49,16 @@ export const Hero = () => {
                   href="https://github.com/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#0aacf5")}
+                  onMouseEnter={() => setBg("#1b1d39")}
                   onMouseLeave={() => setBg("")}
                 >
-                  <i>
-                    <SiGithub />
-                  </i>
+                  <Box className="gbtn">
+                    <span>
+                      <Box className="sicon">
+                        <SiGithub />
+                      </Box>
+                    </span>
+                  </Box>
                 </a>
               </li>
               <li data-text="Leetcode">
@@ -70,12 +67,16 @@ export const Hero = () => {
                   href="https://leetcode.com/sarojpahi/"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#e5a82c")}
+                  onMouseEnter={() => setBg("#e28743")}
                   onMouseLeave={() => setBg("")}
                 >
-                  <i>
-                    <SiLeetcode />
-                  </i>
+                  <Box className="gbtn">
+                    <span>
+                      <Box className="sicon">
+                        <SiLeetcode />
+                      </Box>
+                    </span>
+                  </Box>
                 </a>
               </li>
               <li data-text="Hackerrank">
@@ -84,12 +85,16 @@ export const Hero = () => {
                   href="https://www.hackerrank.com/sarojpah"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#27b75a")}
+                  onMouseEnter={() => setBg("green")}
                   onMouseLeave={() => setBg("")}
                 >
-                  <i>
-                    <SiHackerrank />
-                  </i>
+                  <Box className="gbtn">
+                    <span>
+                      <Box className="sicon">
+                        <SiHackerrank />
+                      </Box>
+                    </span>
+                  </Box>
                 </a>
               </li>
               <li data-text="Linkedin">
@@ -101,9 +106,13 @@ export const Hero = () => {
                   onMouseEnter={() => setBg("#0A66C2")}
                   onMouseLeave={() => setBg("")}
                 >
-                  <i>
-                    <FaLinkedinIn />
-                  </i>
+                  <Box className="gbtn">
+                    <span>
+                      <Box className="sicon">
+                        <FaLinkedinIn />
+                      </Box>
+                    </span>
+                  </Box>
                 </a>
               </li>
             </ul>

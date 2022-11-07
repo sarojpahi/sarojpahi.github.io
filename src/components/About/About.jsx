@@ -13,9 +13,8 @@ export const About = () => {
         bgPosition={"center"}
         bgRepeat={"no-repeat"}
         h="max-content"
-        pt="20px"
       >
-        <VStack align={"center"} justify={"center"}>
+        <VStack align={"center"} justify={"center"} py="20px">
           <Heading color={"#00ccff"}>About Me</Heading>
         </VStack>
         <Flex

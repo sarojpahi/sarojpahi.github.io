@@ -7,14 +7,14 @@ export const Pbtn = ({ link1, link2 }) => {
       <Box w="120px">
         <a href={link1} target="_blank" rel="noreferrer">
           <Box className="gbtn">
-            <span>Demo</span>
+            <span>Live</span>
           </Box>
         </a>
       </Box>
       <Box w="120px">
         <a href={link2} target="_blank" rel="noreferrer">
           <Box className="gbtn">
-            <span>Link</span>
+            <span>Code</span>
           </Box>
         </a>
       </Box>

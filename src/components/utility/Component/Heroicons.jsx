@@ -2,12 +2,12 @@ import React from "react";
 import "../Style/Heroicons.css";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGithub, SiHackerrank, SiLeetcode } from "react-icons/si";
-export const Heroicons = ({ ref }) => {
+export const Heroicons = () => {
   return (
     <div className="heroicon">
       <ul>
         <li style={{ "--i": 5, "--clr": "#6e5494" }}>
-          <a href={ref}>
+          <a href="https://github.com/sarojpahi">
             <span>
               <i>
                 <SiGithub />
@@ -17,7 +17,7 @@ export const Heroicons = ({ ref }) => {
           </a>
         </li>
         <li style={{ "--i": 4, "--clr": "#0A66C2" }}>
-          <a href={ref}>
+          <a href="linkedin.com/in/sarojpahi/">
             <span>
               {" "}
               <i>
@@ -28,7 +28,7 @@ export const Heroicons = ({ ref }) => {
           </a>
         </li>
         <li style={{ "--i": 2, "--clr": "#E8A519" }}>
-          <a href={ref}>
+          <a href="https://leetcode.com/sarojpahi/">
             <span>
               <i>
                 <SiLeetcode />
@@ -38,7 +38,7 @@ export const Heroicons = ({ ref }) => {
           </a>
         </li>
         <li style={{ "--i": 1, "--clr": "#00EA64" }}>
-          <a href={ref}>
+          <a href="https://www.hackerrank.com/sarojpah">
             <span>
               <i>
                 <SiHackerrank />

@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, VStack } from "@chakra-ui/react";
 import "./project.css";
-import bg from "../../Assets/mainbg.jpg";
+import bg from "../../Assets/gradient.jpeg";
 import data from "./data.json";
 import { Card } from "./Card";
 import { v4 as key } from "uuid";

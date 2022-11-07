@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
-import bg from "../../Assets/mainbg.jpg";
+import bg from "../../Assets/g2.jpeg";
 import React from "react";
 import "./About.css";
 import me from "../../Assets/me.png";

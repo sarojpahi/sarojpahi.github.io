@@ -82,7 +82,7 @@ export const Hero = () => {
               <li data-text="Hackerrank">
                 <a
                   className="hackerrank"
-                  href="https://www.hackerrank.com/sarojpah"
+                  href="https://www.hackerrank.com/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
                   onMouseEnter={() => setBg("green")}
@@ -100,7 +100,7 @@ export const Hero = () => {
               <li data-text="Linkedin">
                 <a
                   className="linkedin"
-                  href="linkedin.com/in/sarojpahi/"
+                  href="https://www.linkedin.com/in/sarojpah"
                   target={"_blank"}
                   rel="noreferrer"
                   onMouseEnter={() => setBg("#0A66C2")}

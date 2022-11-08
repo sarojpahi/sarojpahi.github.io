@@ -38,7 +38,7 @@ export const Hero = () => {
           </Box>
         </VStack>
         <Flex position={"relative"} top="25px" minW="250px" minH="250px">
-          <Clock />
+          <Clock bg={bg} />
         </Flex>
         <Box width={"50%"} pt="25px" h="250px">
           <div className="social">

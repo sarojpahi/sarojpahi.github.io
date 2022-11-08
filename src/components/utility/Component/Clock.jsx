@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import "../Style/Clock.css";
 import { Loader } from "./Loader";
-export const Clock = () => {
+export const Clock = ({ bg }) => {
   const [s, setS] = useState(0);
   const [m, setM] = useState(0);
   const [h, setH] = useState();
@@ -21,7 +21,12 @@ export const Clock = () => {
     getTime();
   }, []);
   return (
-    <Box className="timecont">
+    <Box
+      className="timecont"
+      borderRadius={"50%"}
+      bg={bg ? bg : "#000000"}
+      transition="0.5s"
+    >
       {h !== undefined ? (
         <div id="time">
           <div

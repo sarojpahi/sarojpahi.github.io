@@ -100,7 +100,7 @@ export const Hero = () => {
               <li data-text="Linkedin">
                 <a
                   className="linkedin"
-                  href="https://www.linkedin.com/in/sarojpah"
+                  href="https://www.linkedin.com/in/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
                   onMouseEnter={() => setBg("#0A66C2")}

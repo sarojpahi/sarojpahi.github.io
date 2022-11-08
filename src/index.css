@@ -7,7 +7,7 @@
   font-family: "Lora", "Times New Roman", Times, serif;
 }
 :root {
-  --bg: #111b1e;
+  --bg: #000000;
   --bg2: linear-gradient(to top, black, #111b1e);
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
@@ -40,9 +40,6 @@ body {
 }
 h1 {
   font-size: 2.5rem;
-}
-section {
-  height: fit-content;
 }
 section > h2,
 section > h5 {

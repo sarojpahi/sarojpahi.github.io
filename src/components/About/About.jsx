@@ -1,12 +1,20 @@
 import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
+import bg from "../../Assets/g2.jpeg";
 import React from "react";
 import "./About.css";
 import me from "../../Assets/me.png";
 export const About = () => {
   return (
     <section id="about">
-      <Box>
-        <VStack align={"center"} justify={"center"} my="20px">
+      <Box
+        position={"relative"}
+        bgImage={bg}
+        bgSize={["auto 100%", "100% 100%"]}
+        bgPosition={"center"}
+        bgRepeat={"no-repeat"}
+        h="max-content"
+      >
+        <VStack align={"center"} justify={"center"} py="20px">
           <Heading color={"#00ccff"}>About Me</Heading>
         </VStack>
         <Flex

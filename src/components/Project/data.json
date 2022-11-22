@@ -17,7 +17,7 @@
     ],
     "link_1": "https://star-middle-3447.netlify.app/",
     "link_2": "https://github.com/sarojpahi/star-middle-3447",
-    "techStack": "ReactJS | Chakra UI | Firebase | CSS"
+    "techStack": "React | JavaScript | Chakra UI | Firebase | CSS"
   },
   {
     "title": "SurveyMonkey Clone",
@@ -36,5 +36,27 @@
     "link_1": "https://slow-argument-2201.netlify.app/",
     "link_2": "https://github.com/ShrikantJawla/slow-argument-2201",
     "techStack": "HTML | CSS | JavaScript"
+  },
+  {
+    "title": "MailTest",
+    "logo": "https://user-images.githubusercontent.com/107534043/203336841-181ae52d-b420-4b81-ad0c-389079f7b1ef.png",
+    "description": "Mailtest is a test mail server solution that allows testing email notifications. A collaboration project where I was responsible for the following task :",
+    "functions": [
+      "Creating the navbar, footer, and some page components",
+      "Styling and making the pages responsive along with the login/signup page",
+      "Login/Signup through Github, Google, Facebook and Email",
+      "Email Verification",
+      "Password Reset",
+      "Update UserName",
+      "Delete Account"
+    ],
+    "image": [
+      "https://user-images.githubusercontent.com/107534043/203330997-12346617-f999-448d-9ef7-df5f70db30bf.png",
+      "https://user-images.githubusercontent.com/107534043/203330877-50fc544b-3a5e-47c8-b25b-09c2a10e13b7.png",
+      "https://user-images.githubusercontent.com/107534043/203335770-1f8f4909-b49c-43cd-90e7-15907e990d17.png"
+    ],
+    "link_1": "https://puffy-calendar-166.netlify.app/",
+    "link_2": "https://github.com/Rohit9894/puffy-calendar-166",
+    "techStack": "React | Chakra UI | Firebase | CSS | TypeScript"
   }
 ]

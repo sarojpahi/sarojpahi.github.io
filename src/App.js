@@ -3,6 +3,7 @@ import "./App.css";
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
 import { Skills } from "./components/Exp/Exp";
+import { Footer } from "./components/Footer/Footer";
 import { Hero } from "./components/Hero/Hero";
 import { Particle } from "./components/Hero/Particle";
 import { Nav } from "./components/Nav/Nav";
@@ -20,6 +21,7 @@ function App() {
       <GithubCalender />
       <Project />
       <Contact />
+      <Footer />
     </ChakraProvider>
   );
 }

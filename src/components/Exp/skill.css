@@ -20,7 +20,11 @@
   color: #fff;
   font-size: 40px !important;
 }
-
+.skill a span,
+.skill a::after,
+.skill a::before {
+  background: var(--clr);
+}
 .skill:hover a span:nth-child(5) {
   transform: translate(40px, -40px);
   opacity: 1;

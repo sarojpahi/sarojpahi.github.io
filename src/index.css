@@ -55,10 +55,12 @@ section > h2 {
 }
 a {
   color: var(--color-primary);
-  transform: var(--transiton);
+  transition: var(--transiton);
+  text-decoration: none !important;
 }
 a:hover {
-  color: white;
+  color: var(--color-primary);
+  transition: var(--transiton);
 }
 img {
   display: block;

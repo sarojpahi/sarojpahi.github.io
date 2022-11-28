@@ -22,7 +22,7 @@
   {
     "title": "SurveyMonkey Clone",
     "logo": "https://user-images.githubusercontent.com/107534043/197141888-734dac4a-e8ed-467c-b28a-eb6c84faa0f1.png",
-    "description": "It is a leading Survey platform around the globe. It lets it's users to create sophisticated surveys using expert templates.A collaboration project where I was responsible for the following task :",
+    "description": "It is a leading Survey platform around the globe. It lets it's users to create sophisticated surveys using expert templates.A collaboration project where I was responsible for the following tasks :",
     "functions": [
       "Creation of various pages of the website including the homepage and dashboard",
       "Creating the navbar, footer, and some page components",
@@ -40,7 +40,7 @@
   {
     "title": "MailTest",
     "logo": "https://user-images.githubusercontent.com/107534043/203336841-181ae52d-b420-4b81-ad0c-389079f7b1ef.png",
-    "description": "Mailtest is a test mail server solution that allows testing email notifications. A collaboration project where I was responsible for the following task :",
+    "description": "Mailtest is a test mail server solution that allows testing email notifications. A collaboration project where I was responsible for the following tasks/functions :",
     "functions": [
       "Creating the navbar, footer, and some page components",
       "Styling and making the pages responsive along with the login/signup page",
@@ -57,6 +57,6 @@
     ],
     "link_1": "https://puffy-calendar-166.netlify.app/",
     "link_2": "https://github.com/Rohit9894/puffy-calendar-166",
-    "techStack": "React | Chakra UI | Firebase | CSS | TypeScript"
+    "techStack": "React | TypeScript | Chakra UI | Firebase | CSS"
   }
 ]

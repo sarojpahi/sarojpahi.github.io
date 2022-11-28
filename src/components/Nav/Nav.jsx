@@ -7,7 +7,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
-import cv from "../../Assets/cv.pdf";
+import cv from "../../Assets/Saroj_Kumar_Pahi_Resume.pdf";
 import { useState } from "react";
 import { Box, Link } from "@chakra-ui/react";
 export const Nav = () => {
@@ -58,7 +58,7 @@ export const Nav = () => {
         <Link
           id="link"
           href={cv}
-          download
+          target="_blank"
           onClick={() => setActiveNav("#resume")}
           className={activeNav === "#resume" ? "active" : ""}
         >

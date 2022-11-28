@@ -4,6 +4,8 @@ import bg from "../../Assets/gradient.jpeg";
 import data from "./data.json";
 import { Card } from "./Card";
 import { v4 as key } from "uuid";
+import { textVariant } from "../utility/Component/motion";
+import { motion } from "framer-motion";
 export const Project = () => {
   return (
     <section id="project">
@@ -17,7 +19,14 @@ export const Project = () => {
         py="20px"
       >
         <VStack align={"center"} justify={"center"}>
-          <Heading color={"#00ccff"}>About My Projects</Heading>
+          <motion.div
+            variants={textVariant(0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true }}
+          >
+            <Heading color={"#00ccff"}>About My Projects</Heading>
+          </motion.div>
         </VStack>
         <Flex
           className="pcs"

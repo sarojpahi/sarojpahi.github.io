@@ -1,5 +1,5 @@
 import "../Style/Btn.css";
-import cv from "../../../Assets/cvlatest.pdf";
+import cv from "../../../Assets/Saroj_Kumar_Pahi_Resume.pdf";
 import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 export const Btn = ({ name, color, onClick }) => {
   const cls = useBreakpointValue({

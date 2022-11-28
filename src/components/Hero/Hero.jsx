@@ -1,11 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  useDisclosure,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Flex, useDisclosure, VStack } from "@chakra-ui/react";
 import "./Hero.css";
 import { Clock } from "../utility/Component/Clock";
 import { GmContact } from "../utility/Component/GmContact";
@@ -13,26 +6,42 @@ import { Gbtn } from "../utility/Component/Gbtn";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGithub, SiHackerrank, SiLeetcode } from "react-icons/si";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { AnimatedCharacters } from "../utility/Component/TextAnimation";
 export const Hero = () => {
   const { isOpen, onToggle, onClose } = useDisclosure();
   const [bg, setBg] = useState("");
+  const placeholderText = [
+    { type: "heading2", text: "Hi I'm" },
+    { type: "heading1", text: "SAROJ KUMAR PAHI" },
+    {
+      type: "heading2",
+      text: "Full Stack Web Developer",
+    },
+  ];
+  const textContainer = {
+    visible: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  };
   return (
-    <Box
-      // h={["max-content", "max-content", "max-content", "100vh"]}
-      h="100vh"
-      w={"100%"}
-      bg={bg}
-      transition="0.5s"
-    >
+    <Box h="100vh" w={"100%"} bg={bg} transition="0.5s">
       <VStack className="name" justifyContent={"space-evenly"} h="full">
-        <VStack align={"flex-start"} px="5px">
-          <Flex flexDirection="column" py="10px">
-            <Text textAlign="left">Hi I'm</Text>
-            <Heading fontSize={"2.8rem"} mb="5px">
-              Saroj Kumar Pahi
-            </Heading>
-            <Text>Full Stack Web Developer</Text>
-          </Flex>
+        <VStack align={"flex-start"} p="5px">
+          <motion.div
+            className="herotextbox"
+            initial="hidden"
+            animate="visible"
+            variants={textContainer}
+          >
+            <div className="textContainer">
+              {placeholderText.map((item, index) => {
+                return <AnimatedCharacters {...item} key={index} />;
+              })}
+            </div>
+          </motion.div>
           <Box>
             <Gbtn onToggle={onToggle} />
           </Box>

@@ -35,10 +35,10 @@
       },
       "onHover": {
         "enable": true,
-        "mode": "trail",
+        "mode": "none",
         "parallax": {
           "enable": false,
-          "force": 2,
+          "force": 0,
           "smooth": 10
         }
       },
@@ -72,7 +72,7 @@
         "links": {
           "opacity": 0.5
         },
-        "radius": 60
+        "radius": 80
       },
       "grab": {
         "distance": 100,
@@ -318,7 +318,7 @@
           "count": 0,
           "enable": true,
           "offset": 0,
-          "speed": 50,
+          "speed": 10,
           "decay": 0,
           "sync": false
         },
@@ -369,7 +369,7 @@
         "acceleration": 9.81,
         "enable": false,
         "inverse": false,
-        "maxSpeed": 50
+        "maxSpeed": 20
       },
       "path": {
         "clamp": true,
@@ -392,7 +392,7 @@
       },
       "random": false,
       "size": false,
-      "speed": 2,
+      "speed": 1.2,
       "spin": {
         "acceleration": 0,
         "enable": false

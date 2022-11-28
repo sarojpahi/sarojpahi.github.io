@@ -13,7 +13,7 @@ export const Gbtn = ({ onToggle }) => {
       <Box w="210px">
         <a href={cv} download>
           <Box className="gbtn">
-            <span>Download Cv</span>
+            <span>Resume</span>
           </Box>
         </a>
       </Box>

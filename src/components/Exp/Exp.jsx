@@ -23,7 +23,7 @@ import {
 import { Skill } from "./Skill";
 export const Skills = () => {
   return (
-    <section id="exp">
+    <section id="skill">
       <Box
         position={"relative"}
         bgImage={bg}

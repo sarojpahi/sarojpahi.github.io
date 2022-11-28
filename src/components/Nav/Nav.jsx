@@ -1,8 +1,13 @@
 import React from "react";
 import "./Nav.css";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { RiServiceLine } from "react-icons/ri";
+import {
+  AiOutlineFilePdf,
+  AiOutlineFundProjectionScreen,
+  AiOutlineHome,
+  AiOutlineUser,
+} from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
+import cv from "../../Assets/cv.pdf";
 import { useState } from "react";
 import { Box, Link } from "@chakra-ui/react";
 export const Nav = () => {
@@ -28,9 +33,9 @@ export const Nav = () => {
         </Link>
         <Link
           id="link"
-          href="#exp"
-          onClick={() => setActiveNav("#exp")}
-          className={activeNav === "#exp" ? "active" : ""}
+          href="#skill"
+          onClick={() => setActiveNav("#skill")}
+          className={activeNav === "#skill" ? "active" : ""}
         >
           <BiBook />
         </Link>
@@ -40,7 +45,7 @@ export const Nav = () => {
           onClick={() => setActiveNav("#project")}
           className={activeNav === "#project" ? "active" : ""}
         >
-          <RiServiceLine />
+          <AiOutlineFundProjectionScreen />
         </Link>
         <Link
           id="link"
@@ -49,6 +54,15 @@ export const Nav = () => {
           className={activeNav === "#contact" ? "active" : ""}
         >
           <BiMessageSquareDetail />
+        </Link>
+        <Link
+          id="link"
+          href={cv}
+          download
+          onClick={() => setActiveNav("#resume")}
+          className={activeNav === "#resume" ? "active" : ""}
+        >
+          <AiOutlineFilePdf />
         </Link>
       </nav>
     </Box>

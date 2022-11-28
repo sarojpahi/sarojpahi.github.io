@@ -8,7 +8,7 @@ nav {
   transform: translate(-50%);
   bottom: 1.5rem;
   display: flex;
-  gap: 0.8rem;
+  gap: 0.5rem;
   border-radius: 3rem;
   backdrop-filter: blur(5px);
 }
@@ -25,4 +25,9 @@ nav #link:hover {
 nav #link.active {
   background: var(--color-bg);
   color: white;
+}
+@media screen and (max-width: 520px) {
+  nav #link {
+    padding: 0.7rem;
+  }
 }

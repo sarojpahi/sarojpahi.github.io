@@ -11,7 +11,6 @@ import {
   SiTypescript,
   SiJavascript,
   SiExpress,
-  SiBabel,
   SiChakraui,
   SiMaterialui,
   SiBootstrap,
@@ -19,10 +18,14 @@ import {
   SiGit,
   SiJava,
   SiCplusplus,
+  SiGraphql,
 } from "react-icons/si";
 import { Skill } from "./Skill";
 import { motion } from "framer-motion";
 import { container, item, textVariant } from "../utility/Component/motion";
+import { TbBrandNextjs } from "react-icons/tb";
+import grapgcms from "../../Assets/graphcms.png";
+import { Framer } from "./Framer";
 export const Skills = () => {
   return (
     <section id="skill">
@@ -75,18 +78,44 @@ export const Skills = () => {
               </motion.li>
               <motion.li variants={item}>
                 <Skill
-                  name="CSS"
-                  color={"#1474b4"}
-                  comp={<IoLogoCss3 />}
-                  reflink="https://www.w3schools.com/css"
+                  name="TypeScript"
+                  color={"#007acc "}
+                  comp={<SiTypescript />}
+                  reflink="
+          https://www.typescriptlang.org/"
                 />
               </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="Java"
+                  color={"#5382a1"}
+                  comp={<SiJava />}
+                  reflink="https://www.java.com/en/"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="C++"
+                  color={"#9c043c"}
+                  comp={<SiCplusplus />}
+                  reflink="https://www.w3schools.com/cpp"
+                />
+              </motion.li>
+
               <motion.li variants={item}>
                 <Skill
                   name="React"
                   color={"#a3e8fd"}
                   comp={<SiReact />}
                   reflink="https://reactjs.org/"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="NextJS"
+                  color={"#000"}
+                  comp={<TbBrandNextjs />}
+                  reflink="https://nextjs.org/"
                 />
               </motion.li>
               <motion.li variants={item}>
@@ -113,15 +142,7 @@ export const Skills = () => {
                   reflink="https://www.mongodb.com/"
                 />
               </motion.li>
-              <motion.li variants={item}>
-                <Skill
-                  name="TypeScript"
-                  color={"#007acc "}
-                  comp={<SiTypescript />}
-                  reflink="
-          https://www.typescriptlang.org/"
-                />
-              </motion.li>
+
               <motion.li variants={item}>
                 <Skill
                   name="NodeJS"
@@ -140,10 +161,26 @@ export const Skills = () => {
               </motion.li>
               <motion.li variants={item}>
                 <Skill
-                  name="Babel"
-                  color={"#F0DB4F"}
-                  comp={<SiBabel />}
-                  reflink="https://babeljs.io/"
+                  name="GraphQL"
+                  color={"#e535ab"}
+                  comp={<SiGraphql />}
+                  reflink="https://graphql.org/"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="HyGraph"
+                  color={"#4f2bc2"}
+                  icon={grapgcms}
+                  reflink="https://hygraph.com/"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="CSS"
+                  color={"#1474b4"}
+                  comp={<IoLogoCss3 />}
+                  reflink="https://www.w3schools.com/css"
                 />
               </motion.li>
               <motion.li variants={item}>
@@ -172,6 +209,14 @@ export const Skills = () => {
               </motion.li>
               <motion.li variants={item}>
                 <Skill
+                  name="FramerM..."
+                  color={"#f349fd"}
+                  comp={<Framer />}
+                  reflink="https://www.framer.com/motion/"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
                   name="Tailwindcss"
                   color={"#3bbbfa"}
                   comp={<SiTailwindcss />}
@@ -184,22 +229,6 @@ export const Skills = () => {
                   color={"#f43e2f"}
                   comp={<SiGit />}
                   reflink="https://git-scm.com/"
-                />
-              </motion.li>
-              <motion.li variants={item}>
-                <Skill
-                  name="Java"
-                  color={"#5382a1"}
-                  comp={<SiJava />}
-                  reflink="https://www.java.com/en/"
-                />
-              </motion.li>
-              <motion.li variants={item}>
-                <Skill
-                  name="C++"
-                  color={"#9c043c"}
-                  comp={<SiCplusplus />}
-                  reflink="https://www.w3schools.com/cpp"
                 />
               </motion.li>
             </motion.ul>

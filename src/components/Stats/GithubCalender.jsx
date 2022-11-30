@@ -48,7 +48,7 @@ export const GithubCalender = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}
-          variants={zoomIn(0.5, 1.5)}
+          variants={zoomIn(0.5, 1.2)}
         >
           {selectLastHalfYear ? (
             <GitHubCalendar
@@ -80,7 +80,7 @@ export const GithubCalender = () => {
           flexWrap="wrap"
         >
           <motion.div
-            variants={fadeIn("left", 0.8, 1.2)}
+            variants={fadeIn("left", 0.5, 1.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
@@ -94,7 +94,7 @@ export const GithubCalender = () => {
             </Box>
           </motion.div>
           <motion.div
-            variants={zoomIn(0.8, 1.2)}
+            variants={zoomIn(0.5, 1.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
@@ -108,7 +108,7 @@ export const GithubCalender = () => {
             </Box>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 0.8, 1.2)}
+            variants={fadeIn("right", 0.5, 1.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}

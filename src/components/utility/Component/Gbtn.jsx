@@ -7,17 +7,17 @@ export const Gbtn = ({ onToggle }) => {
     <Flex
       justify={"center"}
       align="center"
-      gap={[1, 2, 3, 4, 6, 8]}
+      gap={[1, 2, 3, 4, 6]}
       flexWrap="wrap"
     >
-      <Box w="210px">
+      <Box w="150px">
         <a href={cv} download>
           <Box className="gbtn">
             <span>Resume</span>
           </Box>
         </a>
       </Box>
-      <Box w="140px">
+      <Box w="150px">
         <Box className="gbtn" onClick={onToggle}>
           <span>Contact</span>
         </Box>

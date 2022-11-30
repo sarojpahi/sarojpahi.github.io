@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.5776b6b3.css",
-    "main.js": "/static/js/main.d8ee0ba1.js",
+    "main.css": "/static/css/main.07ca87bb.css",
+    "main.js": "/static/js/main.addee4c5.js",
     "static/media/me.png": "/static/media/me.c5a4790c3940345880e3.png",
     "static/media/Saroj_Kumar_Pahi_Resume.pdf": "/static/media/Saroj_Kumar_Pahi_Resume.4e41c1c1f47cbc4a8b26.pdf",
     "static/media/w3.jpg": "/static/media/w3.2d3d1cfa643a553ded46.jpg",
     "static/media/g2.jpeg": "/static/media/g2.2a18dd505ba88b960347.jpeg",
     "static/media/gradient.jpeg": "/static/media/gradient.e3cad30f37c474011190.jpeg",
+    "static/media/graphcms.png": "/static/media/graphcms.bdbcbcc1251c411ad24e.png",
     "static/media/mainbg.jpg": "/static/media/mainbg.5eb60d6097f8edce1909.jpg",
     "index.html": "/index.html",
-    "main.5776b6b3.css.map": "/static/css/main.5776b6b3.css.map",
-    "main.d8ee0ba1.js.map": "/static/js/main.d8ee0ba1.js.map"
+    "main.07ca87bb.css.map": "/static/css/main.07ca87bb.css.map",
+    "main.addee4c5.js.map": "/static/js/main.addee4c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5776b6b3.css",
-    "static/js/main.d8ee0ba1.js"
+    "static/css/main.07ca87bb.css",
+    "static/js/main.addee4c5.js"
   ]
 }

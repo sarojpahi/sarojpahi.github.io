@@ -20,6 +20,7 @@ export const Nav = () => {
           href="#"
           onClick={() => setActiveNav("#")}
           className={activeNav === "#" ? "active" : ""}
+          dataname="Home"
         >
           <AiOutlineHome />
         </Link>
@@ -28,6 +29,7 @@ export const Nav = () => {
           href="#about"
           onClick={() => setActiveNav("#about")}
           className={activeNav === "#about" ? "active" : ""}
+          dataname="About"
         >
           <AiOutlineUser />
         </Link>
@@ -36,6 +38,7 @@ export const Nav = () => {
           href="#skill"
           onClick={() => setActiveNav("#skill")}
           className={activeNav === "#skill" ? "active" : ""}
+          dataname="Skills"
         >
           <BiBook />
         </Link>
@@ -44,6 +47,7 @@ export const Nav = () => {
           href="#project"
           onClick={() => setActiveNav("#project")}
           className={activeNav === "#project" ? "active" : ""}
+          dataname="Projects"
         >
           <AiOutlineFundProjectionScreen />
         </Link>
@@ -52,6 +56,7 @@ export const Nav = () => {
           href="#contact"
           onClick={() => setActiveNav("#contact")}
           className={activeNav === "#contact" ? "active" : ""}
+          dataname="Contact"
         >
           <BiMessageSquareDetail />
         </Link>
@@ -61,6 +66,7 @@ export const Nav = () => {
           target="_blank"
           onClick={() => setActiveNav("#resume")}
           className={activeNav === "#resume" ? "active" : ""}
+          dataname="Resume"
         >
           <AiOutlineFilePdf />
         </Link>

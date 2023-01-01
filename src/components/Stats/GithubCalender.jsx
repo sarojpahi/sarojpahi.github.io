@@ -53,7 +53,7 @@ export const GithubCalender = () => {
           {selectLastHalfYear ? (
             <GitHubCalendar
               username="sarojpahi"
-              transformData={selectLastHalfYear}
+              // transformData={selectLastHalfYear}
               blockMargin={5}
               blockRadius={7}
               blockSize={16}

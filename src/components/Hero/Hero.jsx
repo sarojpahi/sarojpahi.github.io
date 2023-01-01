@@ -76,7 +76,7 @@ export const Hero = () => {
                   href="https://leetcode.com/sarojpahi/"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#e28743")}
+                  onMouseEnter={() => setBg("#1b1d39")}
                   onMouseLeave={() => setBg("")}
                 >
                   <Box className="gbtn">
@@ -94,7 +94,7 @@ export const Hero = () => {
                   href="https://www.hackerrank.com/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("green")}
+                  onMouseEnter={() => setBg("#1b1d39")}
                   onMouseLeave={() => setBg("")}
                 >
                   <Box className="gbtn">
@@ -112,7 +112,7 @@ export const Hero = () => {
                   href="https://www.linkedin.com/in/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#0A66C2")}
+                  onMouseEnter={() => setBg("#1b1d39")}
                   onMouseLeave={() => setBg("")}
                 >
                   <Box className="gbtn">

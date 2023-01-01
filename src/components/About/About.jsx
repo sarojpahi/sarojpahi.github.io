@@ -60,8 +60,8 @@ export const About = () => {
                 whileInView={"show"}
                 viewport={{ once: true }}
               >
-                <Box>
-                  <Text w="95%" fontSize={["", "20px"]}>
+                <Box className="aboutSub">
+                  <Text className="aboutSub" w="95%" fontSize={["", "19px"]}>
                     I’m an enthusiastic Full Stack Web Developer with a passion
                     for developing scalable web applications and working across
                     the full stack. Adaptive to all kinds of people, and
@@ -70,7 +70,12 @@ export const About = () => {
                     strong communication skills and effective team management
                     skills. A great learner with a problem-solving mindset.
                   </Text>
-                  <Text w="95%" fontSize={["", "20px"]}>
+                  <Text
+                    className="aboutSub"
+                    w="95%"
+                    mt={"2px"}
+                    fontSize={["", "19px"]}
+                  >
                     I’m quite proficient in collaboration, and decision-making
                     and always accountable for my decisions. Seeking to work in
                     an environment that can encourage me to succeed both

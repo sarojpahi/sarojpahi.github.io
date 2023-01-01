@@ -45,7 +45,7 @@
   right: 1px;
   text-align: center;
   background: #0c0c0c;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
   transition: 0.5s;
   z-index: 1;
 }

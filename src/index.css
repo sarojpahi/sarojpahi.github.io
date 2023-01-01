@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -95,4 +96,7 @@ h4 {
 }
 .word-wrapper {
   white-space: nowrap;
+}
+.aboutSub {
+  font-family: "Merienda", cursive;
 }

@@ -1,5 +1,23 @@
 [
   {
+    "title": "SurveyMonkey Clone",
+    "logo": "https://user-images.githubusercontent.com/107534043/197141888-734dac4a-e8ed-467c-b28a-eb6c84faa0f1.png",
+    "description": "It is a leading Survey platform around the globe. It lets it's users to create sophisticated surveys using expert templates.A collaboration project where I was responsible for the following tasks :",
+    "functions": [
+      "Creation of various pages of the website including the homepage and dashboard",
+      "Creating the navbar, footer, and some page components",
+      "Styling and making the pages responsive along with the login/signup page"
+    ],
+    "image": [
+      "https://user-images.githubusercontent.com/107534043/197191961-a6972643-40c6-4485-8877-75e3cf0e5ac5.png",
+      "https://user-images.githubusercontent.com/107534043/197192030-7f43ea86-2298-40e7-8df1-a4885bd4e666.png",
+      "https://user-images.githubusercontent.com/107534043/197192268-e379c974-4471-4851-b1be-e61913fbb59b.png"
+    ],
+    "link_1": "https://slow-argument-2201.netlify.app/",
+    "link_2": "https://github.com/ShrikantJawla/slow-argument-2201",
+    "techStack": "HTML | CSS | JavaScript"
+  },
+  {
     "title": "JioMart Clone",
     "logo": "https://user-images.githubusercontent.com/107534043/197141726-97204728-ed22-42eb-b87c-ad108a10e716.svg",
     "description": "It is one of the India's top E-commerce Website.It deals with a wide variety of products including groceries,fashion,electronics,etc.. . Implemented the following functions :",
@@ -18,24 +36,6 @@
     "link_1": "https://star-middle-3447.netlify.app/",
     "link_2": "https://github.com/sarojpahi/star-middle-3447",
     "techStack": "React | JavaScript | Chakra UI | Firebase | CSS"
-  },
-  {
-    "title": "SurveyMonkey Clone",
-    "logo": "https://user-images.githubusercontent.com/107534043/197141888-734dac4a-e8ed-467c-b28a-eb6c84faa0f1.png",
-    "description": "It is a leading Survey platform around the globe. It lets it's users to create sophisticated surveys using expert templates.A collaboration project where I was responsible for the following tasks :",
-    "functions": [
-      "Creation of various pages of the website including the homepage and dashboard",
-      "Creating the navbar, footer, and some page components",
-      "Styling and making the pages responsive along with the login/signup page"
-    ],
-    "image": [
-      "https://user-images.githubusercontent.com/107534043/197191961-a6972643-40c6-4485-8877-75e3cf0e5ac5.png",
-      "https://user-images.githubusercontent.com/107534043/197192030-7f43ea86-2298-40e7-8df1-a4885bd4e666.png",
-      "https://user-images.githubusercontent.com/107534043/197192268-e379c974-4471-4851-b1be-e61913fbb59b.png"
-    ],
-    "link_1": "https://slow-argument-2201.netlify.app/",
-    "link_2": "https://github.com/ShrikantJawla/slow-argument-2201",
-    "techStack": "HTML | CSS | JavaScript"
   },
   {
     "title": "MailTest",
@@ -58,5 +58,26 @@
     "link_1": "https://puffy-calendar-166.netlify.app/",
     "link_2": "https://github.com/Rohit9894/puffy-calendar-166",
     "techStack": "React | TypeScript | Chakra UI | Firebase | CSS"
+  },
+  {
+    "title": "HealthStone",
+    "logo": "https://github.com/actuallyakshay/skinny-leg-3425/blob/main/client/public/favicon.png?raw=true",
+    "description": "It is an E-commerce website, which deals in medicine, health packages and labtest tests. A collaboration project where I was responsible for the following tasks/functions :",
+    "functions": [
+      "Creating the navbar, footer, and some page components",
+      "Creating the homepage",
+      "Styling and making the pages responsive along with the login/signup page",
+      "Login/Signup though phonenumber",
+      "Admin functionlaity with role base authentication",
+      "Role base access to the database for updatation on products"
+    ],
+    "image": [
+      "https://user-images.githubusercontent.com/103635044/208608303-c12e6222-f5c1-4fb6-8848-a2d69f84be24.png",
+      "https://user-images.githubusercontent.com/107534043/210161416-b0ef0b16-ac16-4e90-b7e4-27a67e5a3a95.png",
+      "https://user-images.githubusercontent.com/103635044/208608324-406153b0-9a4e-4c95-a2d5-81f91fe79ea0.png"
+    ],
+    "link_1": "https://skinny-leg-3425-5jmlchctc-sarojpahi.vercel.app/",
+    "link_2": "https://github.com/actuallyakshay/skinny-leg-3425",
+    "techStack": "React | TypeScript | Firebase  | Chakra UI | Tailwind CSS | MongoDB | Express | NodeJS "
   }
 ]

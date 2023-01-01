@@ -73,7 +73,9 @@ export const Card = ({ flexDir, data }) => {
                   {title}
                 </Heading>
               </Flex>
-              <Text color={"white"}>{description}</Text>
+              <Text className="aboutSub" color={"white"}>
+                {description}
+              </Text>
               <List pl="15px">
                 {functions
                   ? functions.map((el) => (

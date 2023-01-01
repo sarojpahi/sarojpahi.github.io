@@ -20,7 +20,7 @@ nav #link {
   color: var(--color-light);
 }
 nav #link:hover {
-  background: rgba(1, 0, 0, 0, 0.3);
+  background: rgba(1, 0, 0, 0, 0.8);
 }
 nav #link.active {
   background: var(--color-bg);
@@ -30,4 +30,26 @@ nav #link.active {
   nav #link {
     padding: 0.7rem;
   }
+}
+nav #link::after {
+  position: absolute;
+  content: attr(dataname);
+  display: none;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 1s;
+}
+nav #link:hover::after {
+  display: block;
 }

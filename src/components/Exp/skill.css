@@ -83,3 +83,7 @@
 .skill a:hover::before {
   background: var(--clr);
 }
+.skillicon {
+  width: 60px;
+  height: 50px;
+}

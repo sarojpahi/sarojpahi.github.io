@@ -34,7 +34,7 @@ export const Footer = () => {
           justify={"center"}
           align="center"
           px="10px"
-          color={"whatsapp.100"}
+          color={"whiteAlpha.900"}
         >
           <Link href="#" fontSize={"28px"}>
             Home
@@ -52,7 +52,7 @@ export const Footer = () => {
             flexDir={["column", "row"]}
             gap="20px"
             px="10px"
-            color={"whatsapp.100"}
+            color={"whiteAlpha.900"}
           >
             <Link href="#about">About</Link>
             <Link href="#skill">Skill</Link>
@@ -67,7 +67,7 @@ export const Footer = () => {
             flexDir={["column", "row"]}
             gap={"20px"}
             px="10px"
-            color={"whatsapp.100"}
+            color={"whiteAlpha.900"}
           >
             <Link href="https://wa.me/918249816465" target={"_blank"}>
               <HStack>
@@ -98,7 +98,7 @@ export const Footer = () => {
           align="center"
           gap={"25px"}
           pb="20px"
-          color={"whatsapp.100"}
+          color={"whiteAlpha.900"}
         >
           <Link
             fontSize={"3xl"}
@@ -129,7 +129,7 @@ export const Footer = () => {
             <SiLinkedin />
           </Link>
         </Flex>
-        <Box color={"white"} textAlign="center">
+        <Box color={"gray.500"} textAlign="center">
           &copy; Saroj Kumar Pahi
         </Box>
       </motion.div>

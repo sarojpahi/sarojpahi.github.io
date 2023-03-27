@@ -1,6 +1,4 @@
 import { Box, Flex, Heading, VStack } from "@chakra-ui/react";
-import "./project.css";
-import bg from "../../Assets/gradient.jpeg";
 import data from "./data.json";
 import { Card } from "./Card";
 import { v4 as key } from "uuid";
@@ -9,15 +7,7 @@ import { motion } from "framer-motion";
 export const Project = () => {
   return (
     <section id="project">
-      <Box
-        position={"relative"}
-        bgImage={bg}
-        bgSize={["auto 100%", "100% 100%"]}
-        bgPosition={"center"}
-        bgRepeat={"no-repeat"}
-        h="max-content"
-        py="20px"
-      >
+      <Box position={"relative"} h="max-content" py="20px">
         <VStack align={"center"} justify={"center"}>
           <motion.div
             variants={textVariant(0.5)}
@@ -25,7 +15,13 @@ export const Project = () => {
             whileInView={"show"}
             viewport={{ once: true }}
           >
-            <Heading color={"#00ccff"}>About My Projects</Heading>
+            <Heading
+              color={"#00ccff"}
+              textDecoration="underline"
+              textUnderlineOffset={"5px"}
+            >
+              About My Projects
+            </Heading>
           </motion.div>
         </VStack>
         <Flex

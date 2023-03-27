@@ -42,6 +42,7 @@ export const AnimatedCharacters = (props) => {
                     overflow: "hidden",
                     display: "inline-block",
                   }}
+                  className="textanime"
                   key={index}
                 >
                   <motion.span

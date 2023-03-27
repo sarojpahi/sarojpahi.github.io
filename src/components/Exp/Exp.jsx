@@ -1,6 +1,5 @@
 import React from "react";
 import "./exp.css";
-import bg from "../../Assets/mainbg.jpg";
 import { Box, Heading, VStack } from "@chakra-ui/react";
 import { IoLogoCss3, IoLogoHtml5, IoLogoNodejs } from "react-icons/io";
 import {
@@ -31,7 +30,6 @@ export const Skills = () => {
     <section id="skill">
       <Box
         position={"relative"}
-        bgImage={bg}
         bgSize={["auto 100%", "100% 100%"]}
         bgPosition={"center"}
         bgRepeat={"no-repeat"}
@@ -50,7 +48,13 @@ export const Skills = () => {
               whileInView={"show"}
               viewport={{ once: true }}
             >
-              <Heading color={"#00ccff"}>About My Skills</Heading>
+              <Heading
+                color={"#00ccff"}
+                textDecoration="underline"
+                textUnderlineOffset={"5px"}
+              >
+                About My Skills
+              </Heading>
             </motion.div>
           </VStack>
           <Box className="skillscont" my={"60px"} w="80%" mx={"auto"}>

@@ -1,6 +1,5 @@
 import { Box, Flex, HStack, Link } from "@chakra-ui/react";
 import React from "react";
-import bg from "../../Assets/g2.jpeg";
 import cv from "../../Assets/Saroj_Kumar_Pahi_Resume.pdf";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import {
@@ -14,16 +13,7 @@ import { motion } from "framer-motion";
 import { footerVariants } from "../utility/Component/motion";
 export const Footer = () => {
   return (
-    <Box
-      position={"relative"}
-      bgImage={bg}
-      bgSize={["auto 100%", "100% 100%"]}
-      bgPosition={"center"}
-      bgRepeat={"no-repeat"}
-      h="max-content"
-      py="20px"
-      pb="120px"
-    >
+    <Box position={"relative"} h="max-content" py="20px" pb="120px">
       <motion.div
         variants={footerVariants}
         initial="hidden"

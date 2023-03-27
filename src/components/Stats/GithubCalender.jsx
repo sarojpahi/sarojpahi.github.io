@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, Image, VStack } from "@chakra-ui/react";
-import bg from "../../Assets/mainbg.jpg";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
@@ -27,7 +26,6 @@ export const GithubCalender = () => {
   return (
     <Box
       position={"relative"}
-      bgImage={[bg]}
       bgSize={["auto 100%", "100% 100%"]}
       bgPosition={"center"}
       bgRepeat={"no-repeat"}
@@ -42,7 +40,13 @@ export const GithubCalender = () => {
           whileInView={"show"}
           viewport={{ once: true }}
         >
-          <Heading color={"#00ccff"}>About My Github Stats</Heading>
+          <Heading
+            color={"#00ccff"}
+            textDecoration="underline"
+            textUnderlineOffset={"5px"}
+          >
+            About My Github Stats
+          </Heading>
         </motion.div>
         <motion.div
           initial="hidden"

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Merienda:wght@300;400&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -28,10 +27,7 @@ html {
 }
 body {
   /* background-image: url(./Assets/w1.jpg) !important; */
-  background: var(--bg) !important;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+
   color: white;
   line-height: 1.7;
 }
@@ -68,6 +64,13 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+@media screen and (min-width: 760px) {
+  .textanime {
+    font-size: 2.5em;
+  }
+}
+
 @media screen and (max-widht: 1024px) {
   .container {
     width: var(--container-width-md);
@@ -77,9 +80,6 @@ img {
   .container {
     width: var(--coontainer-width-ms);
   }
-}
-#project {
-  background: var(--bg2);
 }
 
 h1 {

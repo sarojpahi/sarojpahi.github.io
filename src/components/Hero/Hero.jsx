@@ -1,16 +1,13 @@
 import { Box, Flex, useDisclosure, VStack } from "@chakra-ui/react";
 import "./Hero.css";
-import { Clock } from "../utility/Component/Clock";
 import { GmContact } from "../utility/Component/GmContact";
 import { Gbtn } from "../utility/Component/Gbtn";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGithub, SiHackerrank, SiLeetcode } from "react-icons/si";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatedCharacters } from "../utility/Component/TextAnimation";
 export const Hero = () => {
   const { isOpen, onToggle, onClose } = useDisclosure();
-  const [bg, setBg] = useState("");
   const placeholderText = [
     { type: "heading2", text: "Hi I'm" },
     { type: "heading1", text: "SAROJ KUMAR PAHI" },
@@ -27,9 +24,14 @@ export const Hero = () => {
     },
   };
   return (
-    <Box h="100vh" w={"100%"} bg={bg} transition="0.5s">
-      <VStack className="name" justifyContent={"space-evenly"} h="full">
-        <VStack align={"flex-start"} p="5px">
+    <Box h="100vh" w={"100%"} transition="0.5s">
+      <Flex
+        className="name"
+        h="full"
+        justify={"space-between"}
+        flexDirection={{ base: "column", lg: "row" }}
+      >
+        <VStack align={"flex-start"} p="4%">
           <motion.div
             className="herotextbox"
             initial="hidden"
@@ -46,20 +48,15 @@ export const Hero = () => {
             <Gbtn onToggle={onToggle} />
           </Box>
         </VStack>
-        <Flex position={"relative"} top="25px" minW="250px" minH="250px">
-          <Clock bg={bg} />
-        </Flex>
-        <Box width={"50%"} pt="25px" h="250px">
+        <Box pt="25px" h="250px" pr={{ lg: "30px" }}>
           <div className="social">
             <ul className="sci">
-              <li data-text="Github" style={{ "--clr": bg }}>
+              <li data-text="Github">
                 <a
                   className="github"
                   href="https://github.com/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#1b1d39")}
-                  onMouseLeave={() => setBg("")}
                 >
                   <Box className="gbtn">
                     <span>
@@ -76,8 +73,6 @@ export const Hero = () => {
                   href="https://leetcode.com/sarojpahi/"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#1b1d39")}
-                  onMouseLeave={() => setBg("")}
                 >
                   <Box className="gbtn">
                     <span>
@@ -94,8 +89,6 @@ export const Hero = () => {
                   href="https://www.hackerrank.com/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#1b1d39")}
-                  onMouseLeave={() => setBg("")}
                 >
                   <Box className="gbtn">
                     <span>
@@ -112,8 +105,6 @@ export const Hero = () => {
                   href="https://www.linkedin.com/in/sarojpahi"
                   target={"_blank"}
                   rel="noreferrer"
-                  onMouseEnter={() => setBg("#1b1d39")}
-                  onMouseLeave={() => setBg("")}
                 >
                   <Box className="gbtn">
                     <span>
@@ -134,7 +125,7 @@ export const Hero = () => {
             isO={isOpen}
           />
         </Box>
-      </VStack>
+      </Flex>
     </Box>
   );
 };

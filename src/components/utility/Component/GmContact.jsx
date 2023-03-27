@@ -80,6 +80,8 @@ export const GmContact = ({ display, onC, isO }) => {
             fontSize="36px"
             color={"#fff"}
             textAlign="center"
+            textDecoration={"underline"}
+            textUnderlineOffset="5px"
           >
             Contact Me
           </Heading>

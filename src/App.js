@@ -5,7 +5,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Skills } from "./components/Exp/Exp";
 import { Footer } from "./components/Footer/Footer";
 import { Hero } from "./components/Hero/Hero";
-import { Particle } from "./components/Hero/Particle";
+import MatrixRain from "./components/Hero/MatrixRain";
 import { Nav } from "./components/Nav/Nav";
 import { Project } from "./components/Project/Project";
 import { GithubCalender } from "./components/Stats/GithubCalender";
@@ -13,7 +13,9 @@ import { GithubCalender } from "./components/Stats/GithubCalender";
 function App() {
   return (
     <ChakraProvider>
-      <Particle />
+      <div className="matrixRain">
+        <MatrixRain />
+      </div>
       <Nav />
       <Hero />
       <About />

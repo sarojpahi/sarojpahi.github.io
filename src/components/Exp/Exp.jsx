@@ -15,9 +15,10 @@ import {
   SiBootstrap,
   SiTailwindcss,
   SiGit,
-  SiJava,
-  SiCplusplus,
   SiGraphql,
+  SiAngular,
+  SiPython,
+  SiRedis,
 } from "react-icons/si";
 import { Skill } from "./Skill";
 import { motion } from "framer-motion";
@@ -28,20 +29,13 @@ import { Framer } from "./Framer";
 export const Skills = () => {
   return (
     <section id="skill">
-      <Box
-        position={"relative"}
-        bgSize={["auto 100%", "100% 100%"]}
-        bgPosition={"center"}
-        bgRepeat={"no-repeat"}
-        h="max-content"
-        py="20px"
-      >
+      <Box position={"relative"} py="20px">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <VStack align={"center"} justify={"center"}>
+          <VStack w={"full"} h={"full"} align={"center"} justify={"center"}>
             <motion.div
               variants={textVariant(0.5)}
               initial="hidden"
@@ -89,23 +83,15 @@ export const Skills = () => {
           https://www.typescriptlang.org/"
                 />
               </motion.li>
-              <motion.li variants={item}>
-                <Skill
-                  name="Java"
-                  color={"#5382a1"}
-                  comp={<SiJava />}
-                  reflink="https://www.java.com/en/"
-                />
-              </motion.li>
-              <motion.li variants={item}>
-                <Skill
-                  name="C++"
-                  color={"#9c043c"}
-                  comp={<SiCplusplus />}
-                  reflink="https://www.w3schools.com/cpp"
-                />
-              </motion.li>
 
+              <motion.li variants={item}>
+                <Skill
+                  name="Python"
+                  color={"#FFD43B"}
+                  comp={<SiPython />}
+                  reflink="https://www.python.org/"
+                />
+              </motion.li>
               <motion.li variants={item}>
                 <Skill
                   name="React"
@@ -124,10 +110,34 @@ export const Skills = () => {
               </motion.li>
               <motion.li variants={item}>
                 <Skill
+                  name="Angular"
+                  color={"#B52E31"}
+                  comp={<SiAngular />}
+                  reflink="https://angular.io/"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
                   name="Redux"
                   color={"#441f71"}
                   comp={<SiRedux />}
                   reflink="https://redux.js.org/"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="NodeJS"
+                  color={"#3c873a"}
+                  comp={<IoLogoNodejs />}
+                  reflink="https://nodejs.org/en"
+                />
+              </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="Express"
+                  color={"#303030"}
+                  comp={<SiExpress />}
+                  reflink="https://expressjs.com/"
                 />
               </motion.li>
               <motion.li variants={item}>
@@ -146,23 +156,15 @@ export const Skills = () => {
                   reflink="https://www.mongodb.com/"
                 />
               </motion.li>
+              <motion.li variants={item}>
+                <Skill
+                  name="Redis"
+                  color={"#A41E11"}
+                  comp={<SiRedis />}
+                  reflink="https://redis.io/"
+                />
+              </motion.li>
 
-              <motion.li variants={item}>
-                <Skill
-                  name="NodeJS"
-                  color={"#3c873a"}
-                  comp={<IoLogoNodejs />}
-                  reflink="https://nodejs.org/en"
-                />
-              </motion.li>
-              <motion.li variants={item}>
-                <Skill
-                  name="Express"
-                  color={"#303030"}
-                  comp={<SiExpress />}
-                  reflink="https://expressjs.com/"
-                />
-              </motion.li>
               <motion.li variants={item}>
                 <Skill
                   name="GraphQL"
